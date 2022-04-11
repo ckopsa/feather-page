@@ -9,7 +9,7 @@ const IndexPage = () => {
     <Layout pageTitle="Home">
       <Stack>
         <Row style={{
-          backgroundImage: `url(${TempleJumbo})`,
+          backgroundImage: `url(https://raw.githubusercontent.com/coljamkop/feather-page/main/src/images/temple-jumbotron.png)`,
           backgroundSize: "100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
