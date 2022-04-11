@@ -7,7 +7,7 @@ const Layout = ({ pageTitle, children }: {pageTitle: string, children: any[]}) =
   return (
     <div className="w-100 bg-white">
       <title>{pageTitle}</title>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="primary" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand href="/">Feather River Temple</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
