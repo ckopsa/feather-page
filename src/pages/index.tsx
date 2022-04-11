@@ -25,13 +25,9 @@ const IndexPage = () => {
           <Col md={3}>
             <h1>Come & See</h1>
             <p>
-              Feather River California Temple Open House 2022
+              Feather River California Temple Open House
               <br/>
-              Beginning April 28, 2022,
-              <br/>
-              Open Daily Excluding Sundays,
-              <br/>
-              9 a.m. to 9 p.m.
+              To Be Announced
             </p>
           </Col>
         </Row>

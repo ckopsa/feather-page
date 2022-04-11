@@ -9,7 +9,7 @@ const Layout = ({ pageTitle, children }: {pageTitle: string, children: any[]}) =
       <title>{pageTitle}</title>
       <Navbar bg="primary" variant="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="/feather-page">Feather River Temple</Navbar.Brand>
+          <Navbar.Brand href="/">Feather River Temple</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
