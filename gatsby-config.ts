@@ -5,7 +5,9 @@ const config: GatsbyConfig = {
     title: `new`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-sass'
+  ],
 }
 
 export default config
