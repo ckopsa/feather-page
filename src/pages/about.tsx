@@ -1,8 +1,6 @@
 import * as React from "react"
-import Greeting from '../components/greeting'
-import { Link } from "gatsby";
 import Layout from "../components/Layout";
-import { Button, Col, Image, Row, Stack } from "react-bootstrap";
+import { Button, Col, Row, Stack } from "react-bootstrap";
 import TemplePicture from "../images/temple-pass-along.jpg"
 
 const AboutPage = () => {
@@ -95,10 +93,7 @@ const AboutPage = () => {
             </Stack>
           </Col>
         </Row>
-
-
       </Stack>
-
     </Layout>
   )
 }

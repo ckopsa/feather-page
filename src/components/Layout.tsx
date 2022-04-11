@@ -15,7 +15,7 @@ const Layout = ({ pageTitle, children }: {pageTitle: string, children: any[]}) =
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/about">Facts</Nav.Link>
+              <Nav.Link href="/facts">Facts</Nav.Link>
               <Nav.Link href="/about">FAQ</Nav.Link>
               <Nav.Link href="/about">Resources</Nav.Link>
             </Nav>
