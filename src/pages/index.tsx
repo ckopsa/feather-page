@@ -2,8 +2,6 @@ import * as React from "react"
 import Layout from "../components/Layout";
 import { Col, Row, Stack } from "react-bootstrap";
 
-import TempleJumbo from "../images/temple-jumbotron.png"
-
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
@@ -52,8 +50,8 @@ const IndexPage = () => {
             </h1>
             <p>
               Brother and Sister Jensen currently serve as missionaries at the Feather River California Temple
-              construction site. They welcome all visitors Wednesday and Fridays from 1-3:30 pm. Contact Sister Jensen
-              for outside appointments, for groups, families, and individuals (208-709-3437).
+              construction site. Contact Sister Jensen for outside appointments, for groups, families, and individuals
+              (208-709-3437).
             </p>
           </Col>
         </Row>

@@ -5,19 +5,16 @@ import "../styles/index.scss"
 
 const Layout = ({ pageTitle, children }: {pageTitle: string, children: any[]}) => {
   return (
-    <div className="w-100 bg-white">
+    <Stack>
       <title>{pageTitle}</title>
       <Navbar bg="primary" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand href="/">Feather River Temple</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Toggle/>
+          <Navbar.Collapse>
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/facts">Facts</Nav.Link>
               <Nav.Link href="/faq">FAQ</Nav.Link>
-              <Nav.Link href="/about">Resources</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -52,7 +49,7 @@ const Layout = ({ pageTitle, children }: {pageTitle: string, children: any[]}) =
 
         <span>© All rights reserved</span>
       </Row>
-    </div>
+    </Stack>
   )
 }
 
