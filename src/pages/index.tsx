@@ -1,23 +1,30 @@
 import * as React from "react"
 import Layout from "../components/Layout";
-import { Col, Row, Stack } from "react-bootstrap";
+import { Col, Ratio, Row, Stack } from "react-bootstrap";
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
       <Stack>
-        <Row style={{
-          backgroundImage: `url(https://raw.githubusercontent.com/coljamkop/feather-page/main/src/images/temple-jumbotron.png)`,
-          backgroundSize: "100%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          height: "800px"
-        }}
-             classname="align-content-center d-flex"
-        >
-          <Col md={{ span: 4, offset: 5 }} style={{paddingTop: "200px"}}>
-            <span className="display-1 text-black fw-bolder">Feather River Temple in Yuba City</span>
-          </Col>
+        <Row style={{height: "auto"}}>
+          <Ratio aspectRatio="21x9">
+            <header>
+              <div className="overlay"/>
+
+              <video playsInline={true} autoPlay={true} muted={true} loop={true}>
+                <source src="https://storage.googleapis.com/temple_videos/moroni.mp4" type="video/mp4"/>
+              </video>
+
+              <div className="container h-100">
+                <div className="d-flex h-100 text-center align-items-center">
+                  <div className="w-100 text-white">
+                    <h1 className="display-3">Feather River Temple in Yuba City</h1>
+                    {/*<p className="lead mb-0">Yuba City, CA</p>*/}
+                  </div>
+                </div>
+              </div>
+            </header>
+          </Ratio>
         </Row>
         <Row className="p-3 text-center text-black justify-content-center">
           <Col md={3}>
@@ -33,12 +40,11 @@ const IndexPage = () => {
           <Col md={5}>
             <h1>You Are Invited to Come Inside</h1>
             <p>
-              Open house tour dates are yet to be announced. We anticipate late 2022. All tours will be free of charge
-              and all are welcome.
+              Open house tour dates are yet to be announced. All tours will be free of charge and all are welcome.
             </p>
             <p>
               The Feather River California Temple is currently under construction. When it is complete, we invite you to
-              tour this beautiful building. Come & See the gplace where we find peace, purpose, and connection to each
+              tour this beautiful building. Come & See the place where we find peace, purpose, and connection to each
               other and to God. During the open house, all people of all ages are welcome to come inside.
             </p>
           </Col>
