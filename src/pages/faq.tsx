@@ -6,9 +6,6 @@ export default function FaqPage() {
   return (
     <Layout pageTitle="FAQ">
       <Stack gap={3}>
-        <Row>
-          <span className="p-3 display-1 fw-bold bg-primary text-white text-center">FAQ</span>
-        </Row>
         <Row className="background-white justify-content-center p-3">
           <Col md={6}>
             <Stack gap={3}>

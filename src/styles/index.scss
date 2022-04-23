@@ -3,7 +3,7 @@ $secondary: rgb(58 94 126);
 $white: rgb(252 252 252);
 $black: #444444;
 $info: rgb(234, 234, 234);
-$font-family-base: "EB Garamond";
+$font-family-base: "Montserrat";
 $font-size-base: 1.75rem;
 
 html,
@@ -13,6 +13,18 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.active {
+  color: #ffd084 !important;
+}
+
+header nav {
+  z-index: 2;
 }
 
 header {
@@ -27,7 +39,7 @@ header video {
   top: 50%;
   left: 50%;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 150%;
   width: auto;
   height: auto;
   z-index: 0;
@@ -57,14 +69,14 @@ header .overlay {
 
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://raw.githubusercontent.com/coljamkop/feather-page/main/src/images/temple-jumbotron.png') black no-repeat center center scroll;
-  }
-
-  header video {
-    display: none;
-  }
-}
+//@media (pointer: coarse) and (hover: none) {
+//  header {
+//    background: url('https://raw.githubusercontent.com/coljamkop/feather-page/main/src/images/temple-jumbotron.png') black no-repeat center center scroll;
+//  }
+//
+//  header video {
+//    display: none;
+//  }
+//}
 
 @import "node_modules/bootstrap/scss/bootstrap";

@@ -5,15 +5,13 @@ import { Button, Col, Row, Stack } from "react-bootstrap";
 const AboutPage = () => {
   return (
     <Layout pageTitle="About">
-      <Stack gap={3}>
-        <Row>
-          <span className="p-3 display-1 fw-bold bg-primary text-white text-center">About</span>
-        </Row>
+      <Stack gap={3} className="text-center">
         <Row className="background-white justify-content-center p-3">
           <Col md={6}>
             <Stack gap={3}>
               <Row>
                 <h3>What is a Temple?</h3>
+                <hr/>
                 <p>
                   The Church of Jesus Christ of Latter-day Saints has been building temples since the 1830s. Latter-day
                   Saint

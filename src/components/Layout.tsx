@@ -6,15 +6,25 @@ import "../styles/index.scss"
 const Layout = ({ pageTitle, children }: {pageTitle: string, children: any[]}) => {
   return (
     <Stack>
-      <title>{pageTitle}</title>
+      <title>Feather River Temple - {pageTitle}</title>
       <Navbar bg="primary" variant="dark" expand="lg">
-        <Container>
-          <Navbar.Brand href="/">Feather River Temple</Navbar.Brand>
+        <Container fluid>
+          <Navbar.Brand href="/">
+            <img
+              src="https://feather.elivate.us/wp-content/uploads/2022/02/Group-2.png"
+              width="250"
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
           <Navbar.Toggle/>
           <Navbar.Collapse>
-            <Nav className="me-auto">
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/faq">FAQ</Nav.Link>
+            <Nav className="ms-auto text-center">
+              <Nav.Link href="/about" active={pageTitle === "About"}>
+                <span className="p-4">About</span>
+              </Nav.Link>
+              <Nav.Link href="/faq" active={pageTitle === "FAQ"} activeStyle={{color: '#ffd084'}}>
+                <span className="p-4">FAQ</span>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
