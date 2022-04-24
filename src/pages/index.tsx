@@ -95,9 +95,12 @@ const IndexPage = () => {
                             inspiring hope, finding inner peace, and strengthening connections as followers of Jesus
                             Christ.
                         </p>
-                        <Row className="ratio ratio-16x9">
+                        <Row className="ratio ratio-16x9 m-5">
                             <iframe src="https://www.youtube.com/embed/HX9K42SnQQQ" allowFullScreen/>
                         </Row>
+                        <Button href="https://www.churchofjesuschrist.org/comeuntochrist/article/what-happens-inside-latter-day-saint-temples"
+                                className="border-3 border-secondary"
+                        >Read more about what really happens inside temples</Button>
                     </Col>
                 </Row>
                 <Row className="text-center bg-primary text-light small p-4">
