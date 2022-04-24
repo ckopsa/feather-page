@@ -41,7 +41,7 @@ const IndexPage = () => {
           </header>
         </Row>
         <Row className="p-4 text-center justify-content-center text-black">
-          <Col sm={10}>
+          <Col lg={6} md={10}>
             <span className="fw-bold">THE CHURCH OF JESUS CHRIST OF LATTER-DAY SAINTS</span>
             <h4 className="text-primary p-3 text-primary fw-bold">
               Visiting the Construction Site
@@ -59,7 +59,7 @@ const IndexPage = () => {
           </Col>
         </Row>
         <Row className="p-5 text-center text-black justify-content-center bg-info">
-          <Col sm={7}>
+          <Col lg={4} md={7}>
             <h4>Come & See</h4>
             <hr/>
             <Image src="https://th.bing.com/th/id/OIP.3tFoqxNBKzyw_gEainbd6wHaHa?pid=ImgDet&w=164&h=164&c=7"
@@ -72,7 +72,7 @@ const IndexPage = () => {
           </Col>
         </Row>
         <Row className="p-3 text-center bg-white text-dark justify-content-center">
-          <Col sm={7}>
+          <Col lg={5} md={7}>
             <h4>You Are Invited to Come Inside</h4>
             <hr/>
             <p>
@@ -89,7 +89,7 @@ const IndexPage = () => {
           </Col>
         </Row>
         <Row className="p-5 text-center text-black justify-content-center bg-info">
-          <Col sm={10}>
+          <Col lg={6} md={10}>
             <h4>What happens in a Temple?</h4>
             <hr/>
             <p>
@@ -97,7 +97,7 @@ const IndexPage = () => {
               inspiring hope, finding inner peace, and strengthening connections as followers of Jesus
               Christ.
             </p>
-            <Row className="ratio ratio-16x9 m-5">
+            <Row className="ratio ratio-16x9 mx-auto my-3">
               <iframe src="https://www.youtube.com/embed/HX9K42SnQQQ" allowFullScreen/>
             </Row>
             <Button

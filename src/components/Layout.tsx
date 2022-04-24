@@ -55,7 +55,7 @@ const Layout = ({pageTitle, children}: { pageTitle: string, children: any[] }) =
         {/*    </Row>*/}
         {/*  </Col>*/}
         {/*</Row>*/}
-        <Row className="text-center bg-primary text-light small p-4">
+        <Row className="text-center bg-primary text-light small py-4 px-0 mx-0">
           <span>This is not an official site of the Church of Jesus Christ of Latter-day Saints</span>
           <span>© All rights reserved</span>
         </Row>

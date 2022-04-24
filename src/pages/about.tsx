@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <Layout pageTitle="About">
       <Stack gap={3} className="text-center">
-        <Row className="background-white justify-content-center p-3">
+        <Row className="background-white justify-content-center p-3 m-0">
           <Col md={6}>
             <Stack gap={3}>
               <Row>
@@ -97,59 +97,60 @@ const AboutPage = () => {
             </Stack>
           </Col>
         </Row>
+        <hr></hr>
+        <Row className="background-white justify-content-center p-3 mx-0">
+          <Col md={6}>
+            <Stack gap={3}>
+              <h3>Facts</h3>
+              <Row>
+                <Col>
+
+                  {
+                    [
+                      {title: "Announced", value: "7 October 2018"},
+                      {title: "Location Announced", value: "26 September 2019"},
+                      {
+                        title: "Groundbreaking and Site Dedication",
+                        value: "18 July 2020 By Elder Paul H. Watkins, Area Seventy"
+                      },
+                      {title: "Site", value: "9.4 acres"},
+                      {title: "Square Feet", value: "38000"},
+                      {
+                        title: "Ordiance Rooms",
+                        value: "Four instruction rooms, three sealing rooms, and one baptistry."
+                      },
+                    ].map(it => {
+                      return (<Row className="p-1">
+                        <span className="fw-bold">{it.title}</span>
+                        <p>{it.value}</p>
+                      </Row>)
+                    })
+                  }
+                </Col>
+                <Col>
+                  {
+                    [
+                      {
+                        title: "Other California Temples",
+                        value: "The Feather River California Temple will be the eighth in the state joining the Los Angeles California Temple (1956), Oakland California Temple (1964), San Diego California Temple (1993), Fresno California Temple (2000), Redlands California Temple (2003), Newport Beach California Temple (2005), and Sacramento California Temple (2006). California is home to over 760,000 Church members organized into nearly 1,300 congregations. The new temple will serve several of the 22 stakes that currently belong to the Sacramento California Temple District."
+                      },
+                      {
+                        title: "Address",
+                        value: "Feather River California Temple\nThe Church of Jesus Christ of Latter-day Saints\n1470 Butte House Road\nYuba City, California 95993"
+                      },
+                    ].map(it => {
+                      return (<Row className="p-1">
+                        <span className="fw-bold">{it.title}</span>
+                        <p>{it.value}</p>
+                      </Row>)
+                    })
+                  }
+                </Col>
+              </Row>
+            </Stack>
+          </Col>
+        </Row>
       </Stack>
-      <hr></hr>
-      <Row className="background-white justify-content-center p-3">
-        <Col md={6}>
-          <Stack gap={3}>
-            <h3>Facts</h3>
-            <Row>
-              <Col>
-                {
-                  [
-                    {title: "Announced", value: "7 October 2018"},
-                    {title: "Location Announced", value: "26 September 2019"},
-                    {
-                      title: "Groundbreaking and Site Dedication",
-                      value: "18 July 2020 By Elder Paul H. Watkins, Area Seventy"
-                    },
-                    {title: "Site", value: "9.4 acres"},
-                    {title: "Square Feet", value: "38000"},
-                    {
-                      title: "Ordiance Rooms",
-                      value: "Four instruction rooms, three sealing rooms, and one baptistry."
-                    },
-                  ].map(it => {
-                    return (<Row className="p-1">
-                      <span className="fw-bold">{it.title}</span>
-                      <p>{it.value}</p>
-                    </Row>)
-                  })
-                }
-              </Col>
-              <Col>
-                {
-                  [
-                    {
-                      title: "Other California Temples",
-                      value: "The Feather River California Temple will be the eighth in the state joining the Los Angeles California Temple (1956), Oakland California Temple (1964), San Diego California Temple (1993), Fresno California Temple (2000), Redlands California Temple (2003), Newport Beach California Temple (2005), and Sacramento California Temple (2006). California is home to over 760,000 Church members organized into nearly 1,300 congregations. The new temple will serve several of the 22 stakes that currently belong to the Sacramento California Temple District."
-                    },
-                    {
-                      title: "Address",
-                      value: "Feather River California Temple\nThe Church of Jesus Christ of Latter-day Saints\n1470 Butte House Road\nYuba City, California 95993"
-                    },
-                  ].map(it => {
-                    return (<Row className="p-1">
-                      <span className="fw-bold">{it.title}</span>
-                      <p>{it.value}</p>
-                    </Row>)
-                  })
-                }
-              </Col>
-            </Row>
-          </Stack>
-        </Col>
-      </Row>
     </Layout>
   )
 }
