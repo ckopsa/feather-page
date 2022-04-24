@@ -1,18 +1,21 @@
-$primary: rgb(47 67 87);
-$secondary: rgb(58 94 126);
+$primary: rgb(28, 54, 100);
+$secondary: rgb(255, 208, 132);
 $white: rgb(252 252 252);
 $black: #444444;
 $info: rgb(234, 234, 234);
-$font-family-base: "Montserrat";
-$font-size-base: 1.75rem;
+$font-family-base: "montserrat";
+$font-size-base: 1.5rem;
+$font-weight-base: 400;
 
 html,
 body,
-#___gatsby {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+#___gatsby,
+#gatsby-focus-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
 .nav-link {

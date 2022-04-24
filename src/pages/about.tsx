@@ -53,7 +53,7 @@ const AboutPage = () => {
                   follow a course of Christian service and commitment throughout their lives.
                 </p>
               </Row>
-              <Row className="bg-info w-100 text-center p-5">
+              <Row className="bg-info text-center p-5">
                 <h3>Christian Beliefs</h3>
                 <p>
                   We’re members of The Church of Jesus Christ of Latter-day Saints, or Latter-day Saints for short.
