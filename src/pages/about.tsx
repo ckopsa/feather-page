@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/Layout";
-import { Button, Col, Row, Stack } from "react-bootstrap";
+import {Button, Col, Row, Stack} from "react-bootstrap";
 
 const AboutPage = () => {
   return (
@@ -107,14 +107,14 @@ const AboutPage = () => {
               <Col>
                 {
                   [
-                    { title: "Announced", value: "7 October 2018" },
-                    { title: "Location Announced", value: "26 September 2019" },
+                    {title: "Announced", value: "7 October 2018"},
+                    {title: "Location Announced", value: "26 September 2019"},
                     {
                       title: "Groundbreaking and Site Dedication",
                       value: "18 July 2020 By Elder Paul H. Watkins, Area Seventy"
                     },
-                    { title: "Site", value: "9.4 acres" },
-                    { title: "Square Feet", value: "38000" },
+                    {title: "Site", value: "9.4 acres"},
+                    {title: "Square Feet", value: "38000"},
                     {
                       title: "Ordiance Rooms",
                       value: "Four instruction rooms, three sealing rooms, and one baptistry."
